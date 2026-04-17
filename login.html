@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Amazon Co| Login</title>
+    <link rel="stylesheet" href="css/loginteste.css">
+</head>
+<body>
+
+    <nav class="nav-container">
+        <ul class="nav-menu">
+            <li onclick="movePrism('front')">Entrar</li>
+            <li onclick="movePrism('right')">Cadastro</li>
+            <li onclick="movePrism('back')">Senha</li>
+            <li onclick="movePrism('left')">Contato</li>
+        </ul>
+    </nav>
+
+    <div class="wrapper">
+        <div class="rec-prism" id="prism">
+            <div class="face face-front">
+                <div class="content">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Logo" class="form-logo">
+                    <h2>Fazer login</h2>
+                    <form onsubmit="event.preventDefault(); showSuccess();">
+                        <div class="field-wrapper">
+                            <input type="email" required placeholder=" ">
+                            <label>E-mail ou CPF</label>
+                        </div>
+                        <div class="field-wrapper">
+                            <input type="password" required placeholder=" ">
+                            <label>Senha</label>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">Continuar</button>
+                    </form>
+                    <p class="footer-text">Ao continuar, você concorda com as Condições de Uso.</p>
+                </div>
+            </div>
+
+            <div class="face face-right">
+                <div class="content">
+                    <h2>Criar conta</h2>
+                    <form onsubmit="event.preventDefault(); showSuccess();">
+                        <div class="field-wrapper">
+                            <input type="text" required placeholder=" ">
+                            <label>Seu nome</label>
+                        </div>
+                        <div class="field-wrapper">
+                            <input type="email" required placeholder=" ">
+                            <label>E-mail</label>
+                        </div>
+                        <div class="field-wrapper">
+                            <input type="password" required placeholder=" ">
+                            <label>Senha</label>
+                        </div>
+                        <button type="submit" class="btn-primary">Criar conta Amazon</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="face face-back">
+                <div class="content">
+                    <h2>Assistência de senha</h2>
+                    <p class="small-info">Insira o e-mail associado à sua conta.</p>
+                    <form onsubmit="event.preventDefault(); showSuccess();">
+                        <div class="field-wrapper">
+                            <input type="email" required placeholder=" ">
+                            <label>E-mail</label>
+                        </div>
+                        <button type="submit" class="btn-primary">Enviar link</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="face face-left">
+                <div class="content">
+                    <h2>Suporte Copa 2026</h2>
+                    <form onsubmit="event.preventDefault(); showSuccess();">
+                        <div class="field-wrapper">
+                            <textarea required placeholder=" "></textarea>
+                            <label>Como podemos ajudar?</label>
+                        </div>
+                        <button type="submit" class="btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="face face-bottom">
+                <div class="content success-screen">
+                    <div class="check-icon">✓</div>
+                    <h2>Solicitação enviada!</h2>
+                    <p>Verifique seu e-mail para os próximos passos.</p>
+                    <button class="btn-secondary" onclick="movePrism('front')">Voltar ao início</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="loginnoj/main.js"></script>
+</body>
+</html>

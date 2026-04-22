@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>Amazon Co| Login</title>
-    <link rel="stylesheet" href="css/loginteste.css">
+    <title>Nike Milano | Member Access</title>
+    <link rel="stylesheet" href="Style.css/login.css">
 </head>
+
 <body>
 
     <nav class="nav-container">
+        <div class="nav-logo">
+            <a href="index.html">
+                <img src="pasta.img/nike.png" alt="Nike">
+            </a>
+        </div>
         <ul class="nav-menu">
-            <li onclick="movePrism('front')">Entrar</li>
-            <li onclick="movePrism('right')">Cadastro</li>
-            <li onclick="movePrism('back')">Senha</li>
-            <li onclick="movePrism('left')">Contato</li>
+            <li onclick="movePrism('front')">Login</li>
+            <li onclick="movePrism('right')">Join Us</li>
+            <li onclick="movePrism('back')">Reset</li>
+            <li onclick="movePrism('left')">Support</li>
         </ul>
     </nav>
 
@@ -21,83 +28,86 @@
         <div class="rec-prism" id="prism">
             <div class="face face-front">
                 <div class="content">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Logo" class="form-logo">
-                    <h2>Fazer login</h2>
+                    <h2 class="nike-title">YOUR ACCOUNT FOR EVERYTHING NIKE</h2>
                     <form onsubmit="event.preventDefault(); showSuccess();">
                         <div class="field-wrapper">
                             <input type="email" required placeholder=" ">
-                            <label>E-mail ou CPF</label>
+                            <label>Email address</label>
                         </div>
                         <div class="field-wrapper">
                             <input type="password" required placeholder=" ">
-                            <label>Senha</label>
+                            <label>Password</label>
                         </div>
-                        
-                        <button type="submit" class="btn-primary">Continuar</button>
+                        <button type="submit" class="btn-nike">SIGN IN</button>
                     </form>
-                    <p class="footer-text">Ao continuar, você concorda com as Condições de Uso.</p>
+                    <p class="footer-text">Not a Member? <span onclick="movePrism('right')"
+                            style="text-decoration: underline; cursor: pointer;">Join us.</span></p>
                 </div>
             </div>
 
             <div class="face face-right">
                 <div class="content">
-                    <h2>Criar conta</h2>
+                    <h2 class="nike-title">BECOME A NIKE MEMBER</h2>
                     <form onsubmit="event.preventDefault(); showSuccess();">
                         <div class="field-wrapper">
                             <input type="text" required placeholder=" ">
-                            <label>Seu nome</label>
+                            <label>First Name</label>
                         </div>
                         <div class="field-wrapper">
                             <input type="email" required placeholder=" ">
-                            <label>E-mail</label>
+                            <label>Email address</label>
                         </div>
                         <div class="field-wrapper">
                             <input type="password" required placeholder=" ">
-                            <label>Senha</label>
+                            <label>Password</label>
                         </div>
-                        <button type="submit" class="btn-primary">Criar conta Amazon</button>
+                        <button type="submit" class="btn-nike">JOIN US</button>
                     </form>
                 </div>
             </div>
 
             <div class="face face-back">
                 <div class="content">
-                    <h2>Assistência de senha</h2>
-                    <p class="small-info">Insira o e-mail associado à sua conta.</p>
+                    <h2 class="nike-title">RESET PASSWORD</h2>
+                    <p class="small-info">Enter your email to receive instructions.</p>
                     <form onsubmit="event.preventDefault(); showSuccess();">
                         <div class="field-wrapper">
                             <input type="email" required placeholder=" ">
-                            <label>E-mail</label>
+                            <label>Email address</label>
                         </div>
-                        <button type="submit" class="btn-primary">Enviar link</button>
+                        <button type="submit" class="btn-nike">SEND EMAIL</button>
                     </form>
                 </div>
             </div>
 
             <div class="face face-left">
                 <div class="content">
-                    <h2>Suporte Copa 2026</h2>
+                    <h2 class="nike-title">NIKE MILANO SUPPORT</h2>
                     <form onsubmit="event.preventDefault(); showSuccess();">
                         <div class="field-wrapper">
                             <textarea required placeholder=" "></textarea>
-                            <label>Como podemos ajudar?</label>
+                            <label>Message</label>
                         </div>
-                        <button type="submit" class="btn-primary">Enviar Mensagem</button>
+                        <button type="submit" class="btn-nike">SEND MESSAGE</button>
                     </form>
                 </div>
             </div>
 
             <div class="face face-bottom">
                 <div class="content success-screen">
-                    <div class="check-icon">✓</div>
-                    <h2>Solicitação enviada!</h2>
-                    <p>Verifique seu e-mail para os próximos passos.</p>
-                    <button class="btn-secondary" onclick="movePrism('front')">Voltar ao início</button>
+                    <div class="nike-check">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" width="80"
+                            style="filter: brightness(0) invert(1);">
+                    </div>
+                    <h2 class="nike-title">DONE.</h2>
+                    <p>Check your inbox for the next steps.</p>
+                    <button class="btn-outline" onclick="movePrism('front')">GO BACK</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="loginnoj/main.js"></script>
+    <script src="tentando script/tentandologin.js"></script>
 </body>
+
 </html>

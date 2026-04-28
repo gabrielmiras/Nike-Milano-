@@ -1,46 +1,22 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap');
 
-header {
-    background-color: #fff;
-    border-bottom: 1px solid #e5e5e5;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+html, body {
+    height: 100%;
+    margin: 0;
 }
 
-.nav-container {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 10px 20px;
+body {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
 }
 
-.logo svg {
-    fill: #111;
-    display: block;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #111;
-    font-weight: 500;
-    text-transform: uppercase;
-    font-size: 14px;
-    letter-spacing: 1px;
-    transition: color 0.3s ease;
+main {
+    flex: 1 0 auto;
 }
 
 .navbar {
-    background-color: #111 ;
+    background-color: #212529 ;
     padding: 15px 0;
 }
 
@@ -50,38 +26,27 @@ nav a {
     letter-spacing: 1px;
 }
 
-.navbar-nav .nav-item {
-    margin-left: 20px;
-}
-
 .navbar-nav .nav-link.active {
-    color: #fff ;
+    color: #fff;
     border-bottom: 2px solid #fff;
-    padding-bottom: 5px;
 }
 
-.nav-link:hover {
-    color: #ccc ;
+.list-unstyled li {
+    margin-bottom: 10px;
+}
+
+.list-unstyled li a {
+    color: #007bff; 
+    transition: all 0.3s ease-in-out;
+    text-shadow: 0 0 0px transparent; 
 }
 
 
-footer {
-    background-color: #fff;
-    padding: 20px 0;
-    border-top: 1px solid #e5e5e5;
-    margin-top: 40px;
+.list-unstyled li a:hover {
+    color: #00d4ff; 
+    text-decoration: none;
+    
+    text-shadow: 0 0 8px #007bff, 
+                 0 0 15px #007bff;
+    filter: brightness(1.2);
 }
-
-.footer-content {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 20px;
-    text-align: center;
-}
-
-.footer-content p {
-    font-size: 12px;
-    color: #777;
-    margin: 0;
-}
-  

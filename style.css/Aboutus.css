@@ -200,3 +200,23 @@ footer {
     margin: 0;
 }
   
+
+.list-unstyled li {
+    margin-bottom: 10px;
+}
+
+.list-unstyled li a {
+    color: #007bff; 
+    transition: all 0.3s ease-in-out;
+    text-shadow: 0 0 0px transparent; 
+}
+
+
+.list-unstyled li a:hover {
+    color: #00d4ff; 
+    text-decoration: none;
+    
+    text-shadow: 0 0 8px #007bff, 
+                 0 0 15px #007bff;
+    filter: brightness(1.2);
+}
